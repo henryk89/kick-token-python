@@ -1,0 +1,2 @@
+# Kick.com token request
+This script gets the token of a user from Kick.com with a username and password. This token is needed when trying to make authenticated requests to the API. This script opens a headless browser using selenium and undetected chromedriver to bypass cloudflare and makes a request to `https://kick.com/kick-token-provider`. The response of this is used to make a POST request to `https://kick.com/mobile/login` where the token of the user is returned.
